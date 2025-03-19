@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comme:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Viga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap");
 
 :root {
 }
@@ -10,7 +10,8 @@
 
 html {
   scroll-behavior: smooth;
-  background: #ffbb5b;
+  background: rgba(254, 254, 254, 1);
+
   color: #000000;
 }
 
@@ -92,9 +93,8 @@ a {
   transition: background-color 0.3s ease;
   background: transparent;
   display: flex;
-  height: 64px;
-  background: #297d17;
-  box-shadow: 4px 7px 9px 0px #00000040;
+  height: 80px;
+  background: rgba(254, 254, 254, 1);
 }
 
 .header__background {
@@ -107,8 +107,7 @@ a {
   z-index: -1;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
-  background: #297d17;
-  box-shadow: 4px 7px 9px 0px #00000040;
+  background: rgba(254, 254, 254, 1);
 }
 .header.is-open .header__background {
   left: 0;
@@ -117,13 +116,11 @@ a {
   margin-right: auto;
   display: flex;
   align-items: center;
-  justify-content: end;
-}
-.policy-terms-header__button-wrapper {
-  margin-right: auto;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
+}
+.header-title {
+  width: 64px;
+  height: 44px;
 }
 .header__icon {
   display: none;
@@ -159,7 +156,7 @@ a {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 12px;
+  padding: 20px 16px 0;
   position: relative;
 }
 
@@ -181,29 +178,26 @@ a {
 
   padding: 0px 32px;
 
-  border-radius: 0px 0px 20px 20px;
   gap: 28px;
-  background: #ffc16b;
-  box-shadow: 0px 9px 16px 0px #00000040;
+  background: rgba(254, 254, 254, 1);
 }
 .navigation__list.is-open {
   right: 0;
 }
 .navigation__link {
-  font-family: Lora;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 22px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-family: Aleo;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+
   transition: all 0.3s ease-in-out;
   text-decoration: none;
-  color: #482600;
+  color: rgba(9, 9, 9, 1);
 }
 .navigation__link:hover,
 .navigation__link:focus {
-  color: #297d17;
+  border-bottom: 1px solid rgba(9, 9, 9, 1);
 }
 .header.is-open {
   background-color: transparent;
@@ -215,6 +209,7 @@ a {
 @media screen and (min-width: 1200px) {
   .navigation-img {
     display: flex;
+    margin-right: 90px;
   }
   .policy-terms-header__icon--menu {
     display: none;
@@ -223,7 +218,7 @@ a {
   .header {
     width: 100%;
 
-    height: 90px;
+    height: 80px;
     padding: 10px 0px 10px 20px;
     display: flex;
     align-items: center;
@@ -259,7 +254,7 @@ a {
 
     padding-block: 0;
     flex: 1;
-    gap: 13px;
+    gap: 36px;
     height: 0px;
     display: flex;
     justify-content: center;
@@ -267,20 +262,15 @@ a {
     justify-content: center;
   }
   .navigation__link {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 22px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #fae599;
-    padding: 12px 24px 12px 24px;
+    font-family: Aleo;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+
     text-decoration: none;
   }
-  .navigation__link:hover,
-  .navigation__link:focus {
-    color: #ffffff;
-  }
+
   .header__icon-home-img {
     display: none;
   }
@@ -291,12 +281,12 @@ a {
 
 .home {
   width: 375px;
-  height: 742px;
-  padding: 182px 16px 0px;
+  height: 812px;
+  padding: 120px 16px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/img/home/Home.png");
+  background-image: url("/img/home/Hero.png");
   margin: auto;
 }
 
@@ -305,37 +295,37 @@ a {
   flex-direction: column;
   align-items: start;
 }
+.home-title-img {
+  width: 299.662353515625px;
+  height: 166px;
+}
 .home-title {
-  font-family: Viga;
-  font-size: 46px;
-  font-weight: 900;
-  line-height: 50.4px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  -webkit-text-stroke: 1px#FFFFFF;
-  color: #482600;
+  font-family: Pixelify Sans;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  padding: 8px 0 21px;
+  color: rgba(122, 101, 31, 1);
 }
 
 .home-text {
-  font-family: Lora;
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 26.4px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-family: Pixelify Sans;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0%;
 
-  color: #000000;
-  padding: 32px 0;
-  width: 253px;
+  padding: 0px 0 275px;
 }
 .home__google-button_image {
-  width: 200px;
-  height: 60px;
+  width: 180px;
+  height: 57px;
+}
+.home__google-button_link {
+  margin: auto;
 }
 .home__google-button_link:hover .home__google-button_image {
-  /* content: url("./image/home/Button-hover.png"); */
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
@@ -343,648 +333,581 @@ a {
 @media screen and (min-width: 1200px) {
   .home {
     width: 1440px;
-    height: 784px;
-    padding: 204px 0px 0px;
-    background-image: url("/img/home/Home\ \(1\).png");
+    height: 800px;
+    padding: 92px 160px 0px;
+    background-image: url("/img/home/Hero\ \(1\).png");
   }
-  .home__container-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .home-title-img {
+    width: 352px;
+    height: 195px;
   }
   .home-title {
-    font-family: Viga;
-    font-size: 52px;
-    font-weight: 900;
-    line-height: 62.4px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    font-family: Pixelify Sans;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: 0%;
 
-    width: 404px;
+    padding: 8px 0 20px;
+    color: rgba(122, 101, 31, 1);
   }
 
   .home-text {
-    font-family: Lora;
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 31.2px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    width: 400px;
-    padding: 29px 0;
+    font-family: Pixelify Sans;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: 0%;
+
+    padding: 0px 0 40px;
+  }
+  .home__google-button_image {
+    width: 180px;
+    height: 57px;
+  }
+  .home__google-button_link {
+    margin: 0;
   }
 }
 .why {
   width: 375px;
-  height: 1085px;
   margin: auto;
-  padding: 77px 15px 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/why/Why\ Choose\ Merge\ Food\ -\ Chef\ Decoration_.png");
+  padding: 40px 15px;
 }
-
+.why-div {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 .why-list {
-  padding-top: 67px;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.why-item {
-  width: 343px;
-  height: 150px;
-  padding: 31px 16px;
-  border-radius: 20px;
-  background: #ffffff99;
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
 
 .why-text-bold {
-  font-family: Lora;
-  font-size: 18px;
+  font-family: Aleo;
   font-weight: 600;
-  line-height: 21.6px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(38, 55, 124, 1);
+  letter-spacing: 0%;
 }
 .why-text {
-  padding-top: 8px;
-  font-family: Lora;
-  font-size: 16px;
+  font-family: Aleo;
   font-weight: 400;
-  line-height: 19.2px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
 }
 @media screen and (min-width: 1200px) {
   .why {
     width: 1440px;
-    height: 700px;
-    padding: 91px 189px 0;
-    background-image: url("/img/why/Why\ Choose\ Merge\ Food\ -\ Chef\ Decoration_\ \(1\).png");
+    padding: 80px 160px;
   }
-}
-.uniqueness {
-  width: 375px;
-  height: 868px;
-  margin: auto;
-  padding: 64px 16px 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/uniqueness/What\ Makes\ the\ Game\ Unique_.png");
-}
+  .why-div {
+    padding-top: 53px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+  .why-div-two {
+    flex-direction: row-reverse;
+  }
+  .why-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 544px;
+  }
 
-.uniqueness-list {
-  padding-top: 54px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.uniqueness-text-bold {
-  font-family: Lora;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 21.6px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-.uniqueness-text {
-  padding-top: 12px;
-  font-family: Lora;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.2px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-@media screen and (min-width: 1200px) {
-  .uniqueness {
-    width: 1440px;
-    height: 700px;
-    padding: 72px 408px 0;
-
-    background-image: url("/img/uniqueness/What\ Makes\ the\ Game\ Unique_\ \(1\).png");
+  .why-text-bold {
+    font-family: Aleo;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+  .why-text {
+    font-family: Aleo;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
   }
 }
 .about {
-  padding: 64px 16px 0px;
+  padding: 40px 16px 0px;
   margin: auto;
   width: 375px;
-  height: 574px;
+  height: 680px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/img/about/About\ the\ Game.png");
+  background-image: url("/img/Game\ Description.png");
 }
 
 .about-title {
-  font-family: Lora;
-  font-size: 22px;
-  font-weight: 900;
-  line-height: 26.4px;
+  font-family: Pixelify Sans;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0%;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  -webkit-text-stroke: 1px#FFFFFF99;
-  color: #297d17;
+  text-transform: uppercase;
+  color: rgba(122, 101, 31, 1);
 }
 
 .about-text {
-  font-family: Lora;
-  font-size: 16px;
+  font-family: Aleo;
   font-weight: 400;
-  line-height: 22.4px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
 
-  padding: 69px 0px 0;
+  padding: 40px 0px 0;
 }
-.about-text-bold {
-  font-family: Lora;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 25.2px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
+
 @media screen and (min-width: 1200px) {
   .about {
-    padding: 66px 408px 0;
+    padding: 80px 449px 0;
     width: 1440px;
-    height: 493px;
-    background-image: url("/img/about/About\ the\ Game\ \(1\).png");
+    height: 496px;
+    background-image: url("/img/Game\ Description\ \(1\).png");
+  }
+  .about-title {
+    font-family: Pixelify Sans;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .about-text {
+    font-family: Aleo;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+
+    padding: 80px 0px 0;
   }
 }
 .how {
   width: 375px;
-  height: 1191px;
+  height: 792px;
   margin: auto;
-  padding: 64px 16px 0;
+  padding: 40px 16px 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/img/how/How\ to\ Play.png");
+  background-image: url("/img/How\ to\ Play_.png");
 }
 
 .how-list {
-  padding-top: 54px;
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
-.how-item {
-  width: 343px;
-  height: 192px;
-}
-.how-img {
-  margin: auto;
-}
-.how-text-bold {
-  padding: 12px 0;
 
-  font-family: Lora;
-  font-size: 20px;
+.how-text-bold {
+  font-family: Aleo;
   font-weight: 600;
-  line-height: 24px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: rgba(38, 55, 124, 1);
 }
 .how-text {
-  font-family: Lora;
-  font-size: 18px;
+  font-family: Aleo;
   font-weight: 400;
-  line-height: 21.6px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
 }
 
 @media screen and (min-width: 1200px) {
   .how {
     width: 1440px;
-    height: 700px;
-    padding: 72px 244px;
-    background-image: url("/img/how/How\ to\ Play\ \(1\).png");
+    height: 716px;
+    padding: 80px 160px;
+    background-image: url("/img/How\ to\ Play_\ \(1\).png");
+  }
+  .how-list {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 448px;
+  }
+
+  .how-text-bold {
+    font-family: Aleo;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+  .how-text {
+    font-family: Aleo;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
   }
 }
 
-.characters {
-  padding: 53px 16px 0;
-  margin: auto;
-  width: 375px;
-  height: 1021px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/characters/Characters.png");
-}
-
-.characters-list {
-  display: flex;
-  flex-direction: column;
-  padding-top: 52px;
-  gap: 32px;
-}
-.characters-item-two {
-  padding-top: 304px;
-}
-.characters-text-bold {
-  font-family: Lora;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 21.6px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
-  color: #751a09;
-}
-.characters-text {
-  font-family: Lora;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.2px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  padding-top: 8px;
-}
-
-@media screen and (min-width: 1200px) {
-  .characters {
-    padding: 72px 189px 81px;
-    width: 1440px;
-    height: 700px;
-    background-image: url("/img/characters/Characters\ \(1\).png");
-  }
-}
 .reviews {
   width: 375px;
-  height: 490px;
+  height: 290px;
   margin: auto;
-  padding: 64px 16px 0;
+  padding: 40px 0px 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  background-image: url("/img/reviews/_User\ Reviews.png");
+  background-image: url("/img/reviews/Reviews.png");
 }
 
 .reviews-list {
-  width: auto;
-  padding-top: 54px;
-  padding-bottom: 29px;
+  padding-top: 40px;
 }
 .reviews-item {
   margin: 0 5px;
+  background: rgba(9, 9, 9, 0.8);
+  width: 327px;
+  height: 127px;
+  padding: 24px;
 }
 .reviews-item-top {
   display: flex;
-  gap: 15px;
+  justify-content: space-between;
   align-items: center;
-
-  height: 60px;
 }
 .reviews-text-bold {
-  font-family: Lora;
+  font-family: Aleo;
+  font-weight: 600;
   font-size: 18px;
-  font-weight: 700;
-  line-height: 23.04px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #ffffff;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+  color: rgba(228, 220, 128, 1);
 }
 .reviews-text {
-  width: 343px;
-  height: 160px;
-  padding: 55px 16px 0;
-  border-radius: 10px;
-  background: #fff8f3b2;
-  backdrop-filter: blur(4px);
-  box-shadow: 0px 2px 6px 0px #0d427b40;
-  font-family: Lora;
-  font-size: 16px;
+  font-family: Aleo;
   font-weight: 400;
-  line-height: 19.2px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #0a1346;
-  margin-top: 8px;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  padding-top: 4px;
+  color: rgba(254, 254, 254, 1);
+}
+.slick-prev:before,
+.slick-next:before {
+  display: none;
 }
 
-.gallery-button-container {
+.slick-next {
+  right: 0px;
   display: none;
 }
 
 @media screen and (min-width: 1200px) {
-  .gallery-button-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-  }
-
-  .gallery-button {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    -webkit-transition: scale 0.3s ease;
-    transition: scale 0.3s ease;
-  }
-
-  .gallery-button:hover {
-    scale: 120%;
-  }
   .reviews {
     width: 1440px;
-    height: 595px;
-    padding: 84px 80px 0;
-    background-image: url("/img/reviews/User\ Reviews.png");
+    height: 594px;
+    padding: 80px 448px 0;
+    background-image: url("/img/reviews/Reviews\ \(1\).png");
+  }
+  .reviews-list {
+    padding-top: 40px;
+    width: 352px;
+    margin: auto;
+  }
+  .reviews-item {
+    width: 352px;
+    height: 136px;
+    padding: 24px;
+  }
+
+  .reviews-text-bold {
+    font-family: Aleo;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+  .reviews-text {
+    font-family: Aleo;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+  .slick-prev:before {
+    content: url("/img/reviews/Arrow\ \(1\).png");
+    display: flex;
+    margin-left: -40px;
+  }
+  .slick-next {
+    display: block;
+  }
+  .slick-next:before {
+    content: url("/img/reviews/Arrow\ \(2\).png");
+
+    display: flex;
+    margin-left: 20px;
   }
 }
 
 .faq {
-  padding: 64px 16px 30px;
+  padding: 40px 16px 30px;
   margin: auto;
   width: 375px;
-  min-height: 866px;
+  height: 687px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  background-image: url("/img/faq/FAQ.png");
+  background-image: url("/img/FAQ.png");
 }
 .faq-container {
-  padding-top: 54px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin: auto;
-}
-
-.faq-item {
-  background: #ffe6c4;
-  border: 2px solid #297d17;
-  padding: 16px;
-  border-radius: 12px;
+  padding: 24px;
+  background: rgba(9, 9, 9, 0.7);
 }
 
 .faq-question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  font-family: Lora;
+  font-family: Aleo;
+  font-weight: 600;
   font-size: 18px;
-  font-weight: 700;
-  line-height: 21.6px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #297d17;
-}
+  line-height: 150%;
+  letter-spacing: 0%;
 
-.toggle-button {
-  background: none;
-  border: none;
-
-  cursor: pointer;
+  color: rgba(228, 220, 128, 1);
 }
 
 .faq-answer {
-  display: none;
-  padding-top: 16px;
-  font-family: Lora;
+  padding-top: 4px;
+  font-family: Aleo;
+  font-weight: 400;
   font-size: 16px;
-  font-weight: 500;
-  line-height: 19.2px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: rgba(254, 254, 254, 1);
+}
+.faq-title {
+  color: rgba(254, 254, 254, 1);
 }
 @media screen and (min-width: 1200px) {
   .faq {
-    padding: 72px 300px;
+    padding: 80px 448px;
     width: 1440px;
-    background-image: url("/img/faq/FAQ\ \(1\).png");
+    height: 832px;
+    background-image: url("/img/FAQ\ \(1\).png");
   }
-}
-.gallery {
-  width: 375px;
-  height: 862px;
-  margin: auto;
-  padding: 64px 16px 0px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/gallery/Gallery.png");
-}
-
-.gallery__list {
-  width: auto;
-  padding-top: 65px;
-  margin: auto;
-}
-.gallery__item {
-  width: 343px;
-  height: 610px;
-  overflow: hidden;
-  position: relative;
-  margin: 0 10px;
-}
-
-.gallery__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .gallery {
-    width: 1440px;
-    height: 1058px;
-
-    margin: auto;
-    padding: 72px 0 0;
-    background-image: url("/img/gallery/12657-NP185O\ 1.png");
+  .faq-container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    background: rgba(9, 9, 9, 0.7);
   }
 
-  .gallery__item {
-    width: 406px;
-    height: 721.78px;
-    margin: 0 10px;
+  .faq-question {
+    font-family: Aleo;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
   }
 
-  .gallery__list {
-    padding: 82px 0 42px;
+  .faq-answer {
+    font-family: Aleo;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
   }
 }
 .features {
   width: 375px;
+  height: 1257px;
   margin: auto;
-  padding: 64px 16px 89px;
+  background-image: url("/img/features/Main\ Gameplay\ Features.png");
+  padding: 40px 16px;
 }
 
 .features-list {
-  padding-top: 64px;
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
 .features-item {
-  width: 163px;
-  height: 230px;
-  margin: auto;
+  display: flex;
+  align-items: start;
+  gap: 16px;
 }
-.features-img {
-  margin: 16px auto;
-}
-.features-text-bold {
-  height: 44px;
 
-  font-family: Lora;
+.features-text-bold {
+  font-family: Aleo;
+  font-weight: 600;
   font-size: 18px;
-  font-weight: 700;
-  line-height: 21.6px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  line-height: 150%;
+  color: rgba(38, 55, 124, 1);
+  letter-spacing: 0%;
 }
 .features-text {
-  font-family: Lora;
+  font-family: Aleo;
+  font-weight: 400;
   font-size: 16px;
-  font-weight: 500;
-  line-height: 19.2px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  line-height: 150%;
+  letter-spacing: 0%;
 }
 
 @media screen and (min-width: 1200px) {
   .features {
     width: 1440px;
-    padding: 72px 270px 101px;
+    height: 769px;
+    background-image: url("/img/features/Main\ Gameplay\ Features\ \(1\).png");
+    padding: 80px 160px 0px;
+  }
+  .features-list {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 544px;
+  }
+  .features-item {
+    display: flex;
+    align-items: start;
+    gap: 16px;
+  }
+
+  .features-text-bold {
+    font-family: Aleo;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+  .features-text {
+    font-family: Aleo;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
   }
 }
 .footer {
-  background: linear-gradient(
-    0deg,
-    #297d17 -30.75%,
-    #ffbb5b 100.89%,
-    #cd946f 135.47%
-  );
-
-  color: #ffffff;
-  padding: 58px 16px 49px;
+  background: rgba(9, 9, 9, 1);
+  padding: 40px 16px 16px;
 }
 .footer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 40px;
 }
 
 .footer-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
   align-items: center;
 
-  gap: 4px;
+  gap: 16px;
 }
 .footer-text {
-  font-family: Lora;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 24px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-family: Aleo;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
 
   text-decoration: none;
-  color: #ffffff;
+  color: rgba(254, 254, 254, 1);
 }
 
 .footer-copyright {
-  font-family: Lora;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
+  font-family: Aleo;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: rgba(254, 254, 254, 1);
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @media screen and (min-width: 1200px) {
   .footer {
-    padding: 48px 199px;
+    width: 1440px;
+    margin: auto;
   }
   .footer-container {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: end;
 
-    align-items: center;
-
-    gap: 160px;
+    gap: 40px;
   }
 
   .footer-wrapper {
-    display: flex;
+    gap: 40px;
     flex-direction: row;
-    justify-content: end;
-    align-items: end;
-
-    gap: 4px;
   }
   .footer-text {
-    font-family: Lora;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    font-family: Aleo;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
   }
 
   .footer-copyright {
-    font-family: Lora;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    font-family: Aleo;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
   }
 }
 .policy-terms-container {
-  padding: 124px 16px 116px;
+  padding: 120px 16px 40px;
+  font-family: Aleo;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
 }
 .policy-terms-title {
-  text-transform: uppercase;
+  font-family: Pixelify Sans;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgba(122, 101, 31, 1);
 }
 
 .policy-terms-text {
   padding-top: 20px;
+  font-family: Pixelify Sans;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0%;
 }
 .policy-terms-texts {
   padding-top: 8px;
@@ -1014,13 +937,30 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .policy-terms-container {
-    padding: 186px 80px 116px;
+    padding: 160px 160px 80px;
+    width: 1440px;
+    margin: auto;
+    font-family: Aleo;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
   }
   .policy-terms-title {
+    font-family: Pixelify Sans;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: 0%;
   }
 
   .policy-terms-text {
     padding-top: 40px;
+    font-family: Pixelify Sans;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: 0%;
   }
   .policy-terms-texts {
   }
@@ -1038,11 +978,8 @@ a {
   bottom: 10px;
   width: 375px;
 
-  padding: 30px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(149, 49, 133, 1);
-  box-shadow: 0px 14px 42px 0px rgba(8, 15, 52, 0.06);
+  padding: 32px;
+  background: rgba(9, 9, 9, 1);
 
   z-index: 1000;
 
@@ -1050,30 +987,42 @@ a {
 }
 
 .cookie-popup-text-two {
-  font-family: Raleway;
-  font-size: 16px;
+  font-family: Aleo;
   font-weight: 400;
-  line-height: 30px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
 
-  color: rgba(87, 78, 68, 1);
+  color: rgba(241, 238, 233, 1);
 }
 .cookie-button-container {
-  padding: 30px 0 0;
+  padding: 40px 0 0;
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 16px;
 }
 .cookie-button {
   border: none;
   background-color: transparent;
+  border: 1px solid rgba(254, 254, 254, 1);
+  width: 256px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-family: Aleo;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: rgba(254, 254, 254, 1);
 }
 #accept-cookies {
+  background: rgba(254, 254, 254, 1);
+  color: rgba(9, 9, 9, 1);
 }
 .close-popup {
   position: absolute;
@@ -1084,14 +1033,11 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .cookie-popup-text-two {
-    font-family: Raleway;
-    font-size: 18px;
     font-weight: 400;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
     width: 648px;
   }
   .cookie-button-container {
@@ -1106,7 +1052,7 @@ a {
     bottom: 10px;
     width: 1440px;
 
-    padding: 52px;
+    padding: 32px;
     display: none;
   }
 
